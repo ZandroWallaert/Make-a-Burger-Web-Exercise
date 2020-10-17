@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make-a-Burger</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" href="assets/css/screen.css" type="text/css"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+</head>
+<body>
+
+<section>
+
+    <h1>Make-a-Burger</h1>
+
+    <div class="intro">
+        <p>Our wonderful hand-made burgers can be <strong>modified</strong> to your taste. By using our brand new and
+            shiney <strong>web interface</strong> you can now order your burgers from the comfort of your sofa! </p>
+
+        <p>Feel free to experiment with different <strong>toppings</strong> and <strong>tastes</strong>. </p>
+    </div>
+    <form>
+        <fieldset class="cf first">
+            <div class="column burger">
+                <input type="text" name="burgername" id="burgername" placeholder="Name it!"/>
+                <figure>
+                    <img src="images/top-bun.svg" alt="Top bun" title="Top bun"/>
+
+                    <div class="toppings">
+
+                    </div>
+                    <img src="images/bottom-bun.svg" alt="Bottom bun" title="Bottom bun"/>
+                    <figcaption>Compile your personal burger</figcaption>
+                </figure>
+            </div>
+            <div class="settings column">
+                <h2>Configure your burger</h2>
+                <input type="radio" name="buntype" id="regular" value="r" /><label for="regular">Regular</label>
+                <input type="radio" name="buntype" id="organic" value="o"/><label for="organic">Organic</label>
+                <input type="radio" name="buntype" id="supersize" value="s"/><label for="supersize">Supersize</label>
+
+                <div class="buttons"></div>
+                <!--<a href="#" class="salad">Salad</a> <a href="#" class="cheddar">Cheddar</a> <a href="#" class="emmentaler">Emmentaler</a> <a href="#" class="beef">Beef</a> <a href="#" class="cucumber">Cucumber</a> <a href="#" class="tomato">Tomato</a>-->
+                <a href="#" class="next">Enter your details &gt;</a>
+            </div>
+        </fieldset>
+        <fieldset>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required="required" />
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" required="required"/>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" required="required"></textarea>
+            <input type="submit" class="next" id="order" value="Order your burger!">
+        </fieldset>
+        <fieldset>
+            <p>Thank you for ordering! You will receive a confirmation email shortly </p>
+        </fieldset>
+    </form>
+    <aside>
+        <h2>Burgers previously created</h2>
+        <ul>
+            <!--<li>Major Burger</li>
+            <li>Burgerific</li>
+            <li class="o">Club sandwich</li><li>Major Burger</li>
+            <li>Burgerific</li>
+            <li class="s">Club sandwich</li><li>Major Burger</li>
+            <li>Burgerific</li>
+            <li>Club sandwich</li>-->
+        </ul>
+    </aside>
+    <footer>Graphics courtesy of <a href="http://www.freepik.com/" target="_blank">Freepik</a></footer>
+</section>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="assets/js/script.js"></script>
+</body>
+</html>
